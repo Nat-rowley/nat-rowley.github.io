@@ -46,20 +46,52 @@ the webpage in standard mode. -->
         </nav>
      </header>
 
-        <main>
-            
-            <section id="welcome">
-                <h2> Welcome to my portfolio! </h2>
-                <p> I'm Nat...  </p>
-            </section>
+     <main>
+        
+        <section id="about">
+            <h2> About Me </h2>
+            <p> I started my path...You can contact me via 
+                <a href="mailto:nathaniel.rowley@outlook.com">email </a>, mobile
+                : 0(+44) 7915 965 899, <a href="https://linkedin.com/in/
+                nat-rowley-92659930b/">LinkedIn </a>, or by using the contact 
+                form below! </p>
+        </section>
 
-        </main>
+        <section id="contact form">
+            <h2> Get in Touch! </h2>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <input type="hidden" name="accessKey" value="0fb93c09-b2aa-4783
+                -8157-6c544dd93e1c">
 
-        <footer>
-            <p>&copy; Nat Rowley Portfolio 2024 </p>
+                <label for="name"> Name: </label>
+                <input type="text" id="name" name="name" required>
 
-        </footer>
+                <label for="subject"> Subject: </label>
+                <input type="text" id="subject" name="subject" required>
 
-    </body>
+                <label for="email"> Email: </label>
+                <input type="text" id="email" name="email" required>
+
+                <label for="message"> Message: </label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="hidden" name="replyTo" value="@">
+                <input type="hidden" name="redirectTo" value="https://nat-rowley.
+                github.io/contact/success">
+
+                <button type="submit"> Send </button>
+
+            </form>
+
+        </section>
+
+     </main>
+
+     <footer>
+        <p>&copy; Nat Rowley Portfolio 2024 </p>
+
+    </footer>
+
+</body>
 
 </html>
