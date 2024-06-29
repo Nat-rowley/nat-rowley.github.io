@@ -1,0 +1,12 @@
+body, h1, h2, h3, h4, p, u1 {
+    margin: 0;
+    padding: 0;
+}
+/* Resets some default styles for consistency */
+
+body {
+    font-family: Lucida Grande, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
