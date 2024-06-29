@@ -19,7 +19,7 @@ the webpage in standard mode. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Ensures the website is responsive, adjusting to different screen sizes. -->
 
-    <title> Nat Rowley CV 2024 </title>
+    <title> Nat Rowley Portfolio 2024 </title>
     <!-- Sets the title of the webpage, shown in the browser tab. -->
 
     <link rel="stylesheet" href="styles.css">
@@ -30,32 +30,90 @@ the webpage in standard mode. -->
     <body>
         <!-- Where all visible content of the HTML document goes. -->
 
-        <header>
-            <h1> Nat Rowley </h1>
-            <p> Web Accessibility Specialist </p>
-        </header>
+     <header>
          <nav>
             <ul>
-                <li><a href="#profile"> Profile </a></li>
-                <li><a href="#education"> Education </a></li>
+                <li><a href="#welcome"> Nat Rowley </a></li>
+            </ul>
+            <ul>
+                <li><a href="#about"> About </a></li>
+                <li><a href="#resume"> Resume </a></li>
                 <li><a href="#experience"> Experience </a></li>
-                <li><a href="#skills"> Skills </a></li>
+                <li><a href="#projects"> Projects </a></li>
+                <li><a href="#accessibility-statement"> Accessibility Statement
+                </a></li>
             </ul>
         </nav>
+     </header>
+
         <main>
-            <section id="profile">
-                <h2> Profile </h2>
-                <p> Name: Nat Rowley </p>
-                <p> Role: Web Accessibility Specialist </p>
-                <p> Email: <a href="mailto:nathaniel.rowley@outlook.com">
-                    nathaniel.rowley@outlook.com </a></p>
-                <p> Phone: 0(+44)7915965899 </p>
-                <p> Linkedin: <a href="https://linkedin.com/in/nat-rowley-92659930b/">LinkedIn Profile</a></p>
-                <p> Name: Nat Rowley </p>
+            <section id="welcome">
+                <h2> Welcome to my portfolio! </h2>
+                <p> I'm Nat...  </p>
+            </section>
+
+            <section id="about">
+                <h2> About Me </h2>
+                <p> I started my path...You can contact me via 
+                    <a href="mailto:nathaniel.rowley@outlook.com">email </a>, mobile
+                    : 0(+44) 7915 965 899, <a href="https://linkedin.com/in/
+                    nat-rowley-92659930b/">LinkedIn </a>, or by using the contact 
+                    form below! </p>
+            </section>
+
+            <section id="contact form">
+                <h2> Get in Touch! </h2>
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <input type="hidden" name="accessKey" value="0fb93c09-b2aa-4783
+                    -8157-6c544dd93e1c">
+
+                    <label for="name"> Name: </label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="subject"> Subject: </label>
+                    <input type="text" id="subject" name="subject" required>
+
+                    <label for="email"> Email: </label>
+                    <input type="text" id="email" name="email" required>
+
+                    <label for="message"> Message: </label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <input type="hidden" name="replyTo" value="@">
+                    <input type="hidden" name="redirectTo" value="https://nat-rowley.github.io/
+                    contact/success">
+
+                    <button type="submit"> Send </button>
+
+                </form>
 
             </section>
 
+            <section id="resume">
+                <h2> Resume </h2>
+                
+            </section>
+
+            <section id="experience">
+                <h2> Experience </h2>
+               
+            </section>
+
+            <section id="projects">
+                <h2> Projects </h2>
+                
+            </section>
+
+            <section id="accessibility-statement">
+                <h2> Accessibility Statement </h2>
+                <p> My portfolio was developed with accessibility as its base. </p>
+            </section>
         </main>
+
+        <footer>
+            <p>&copy; Nat Rowley Portfolio 2024 </p>
+
+        </footer>
 
     </body>
 
