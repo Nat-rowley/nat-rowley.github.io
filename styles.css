@@ -42,19 +42,19 @@ nav ul li a {
 
 nav ul li a.home-link {
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: medium;
 }
 
 nav ul li a:hover,
 nav ul li a:focus {
     text-decoration: underline;
-    border: 1px dotted;
-    padding: 2px;
+    outline: 2px dotted;
     color: #103EB2;
 }
 
 nav ul li a.active {
     font-weight: bold;
+    text-decoration: none;
 }
 
 main {
@@ -73,7 +73,7 @@ section {
 
 footer {
     text-align: center;
-    font-weight: bold;
+    font-weight: medium;
     color: #333;
     width: 100%;
     box-sizing: border-box;
@@ -99,8 +99,7 @@ footer a {
 footer a:hover,
 footer a:focus {
     text-decoration: underline;
-    border: 1px dotted;
-    padding: 2px;
+    outline: 2px dotted;
 }
 
 h1, h2, h3, h4 {
@@ -114,10 +113,10 @@ p {
 
 a {
     color: #103EB2;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:hover,
 a:focus {
-    text-decoration: underline;
+    outline: 2px dotted;
 }
