@@ -7,14 +7,17 @@ body, h1, h2, h3, h4, p, u1 {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f9f9f9;
+    background-color: #E0F2F1;
     color: #333; 
 }
 
 header {
-    color: #fff;
-    padding: 1rem 0;
+    padding: 2.4rem 0;
     text-align: center;
+}
+
+header.shadowed-header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -26,23 +29,28 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 20px;
+    position: relative;
 }
 
 nav ul li a {
     color: #333;
-    text-decoration: none;
-    font-weight: 500;
+    text-decoration: underline;
+    font-weight: medium;
+    font-size: 1rem;
 }
 
 nav ul li a.home-link {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a:focus {
     text-decoration: underline;
-    font-weight: bold;
+    border: 1px dotted;
+    padding: 2px;
+    color: #103EB2;
 }
 
 nav ul li a.active {
@@ -66,8 +74,33 @@ section {
 footer {
     text-align: center;
     font-weight: bold;
-    padding: 1rem 0;
     color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    padding: 4rem;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content p, .footer-content .footer-divider {
+    margin: 0 10px;
+
+}
+
+footer a {
+    text-decoration: underline;
+}
+
+footer a:hover,
+footer a:focus {
+    text-decoration: underline;
+    border: 1px dotted;
+    padding: 2px;
 }
 
 h1, h2, h3, h4 {
@@ -80,11 +113,11 @@ p {
 }
 
 a {
-    color: #0091ff;
+    color: #103EB2;
     text-decoration: none;
 }
 
-a:hover {
+a:hover,
+a:focus {
     text-decoration: underline;
-    font-weight: bold;
 }
