@@ -4,52 +4,50 @@ the webpage in standard mode. -->
 
 <html lang="en">
 <!-- The root element of the HTML document that encloses all other elements in
- the document and specifies the language of the document to help search engines
- and browsers understand the language of your content. This also assists 
- screen readers in pronouncing the text correctly. -->
+the document and specifies the language of the document to help search engines
+and browsers understand the language of your content. This also assists 
+screen readers in pronouncing the text correctly. -->
 
 <head>
 <!-- Contains meta-information about the document that isn't visible on the
- page but is essential for the browser and search engines. -->
+page but is essential for the browser and search engines. -->
 
-    <meta charset="UTF-8">
-    <!-- Sets the character encoding to ensure text content is displayed
-     correctly, supporting a wide range of characters from different languages. -->
+<meta charset="UTF-8">
+<!-- Sets the character encoding to ensure text content is displayed
+correctly, supporting a wide range of characters from different languages. -->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Ensures the website is responsive, adjusting to different screen sizes. -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Ensures the website is responsive, adjusting to different screen sizes. -->
 
-    <title> Nat Rowley Portfolio 2024 </title>
-    <!-- Sets the title of the webpage, shown in the browser tab. -->
+<title> Nat Rowley Portfolio 2024 </title>
+<!-- Sets the title of the webpage, shown in the browser tab. -->
 
-    <link rel="stylesheet" href="styles.css">
-    <!-- Links to an external CSS file for styling. -->
-
+<link rel="stylesheet" href="styles.css">
+<!-- Links to an external CSS file for styling. -->
+     
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,
 200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,
 700;1,800;1,900&display=swap" rel="stylesheet">
     
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,
- 300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,
- 200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,
- 600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
-        <!-- Links to an external CSS file for styling. -->
-        <style>
-            body{
-                font-family: 'Poppins', sans-serif;
-            }
-    
-            h1, h2 {
-                font-family: 'Merriweather', serif
-            }
-    
-        </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,
+300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,
+200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,
+600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+<!-- Links to an external CSS file for styling. -->
+<style>
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Merriweather', serif
+}
+</style>
 </head>
 
     <body>
@@ -80,23 +78,31 @@ the webpage in standard mode. -->
                 form below! </p>
         </section>
 
-        <section id="contact form">
+        <section id="contact-form">
             <h3> Get in Touch! </h3>
             <form action="https://api.staticforms.xyz/submit" method="post">
-                <input type="hidden" name="accessKey" value="0fb93c09-b2aa-4783
-                -8157-6c544dd93e1c">
+                <input type="hidden" name="accessKey" value="0fb93c09-b2aa-4783-8157-6c544dd93e1c">
 
+            <div>
                 <label for="name"> Name: </label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" aria-required="true">
+            </div>
 
+            <div>
                 <label for="subject"> Subject: </label>
-                <input type="text" id="subject" name="subject" required>
+                <input type="text" id="subject" name="subject" aria-required="true">
+            </div>
 
+            <div>
                 <label for="email"> Email: </label>
-                <input type="text" id="email" name="email" required>
+                <input type="text" id="email" name="email" aria-required="true">
+            </div>
 
+            <div>
                 <label for="message"> Message: </label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                <textarea id="message" name="message" rows="4" 
+                aria-required="true"></textarea>
+            </div>
 
                 <input type="hidden" name="replyTo" value="@">
                 <input type="hidden" name="redirectTo" value="https://nat-rowley.
@@ -105,7 +111,6 @@ the webpage in standard mode. -->
                 <button type="submit"> Send </button>
 
             </form>
-
         </section>
 
      </main>

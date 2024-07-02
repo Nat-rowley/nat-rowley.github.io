@@ -1,9 +1,10 @@
+/* General Reset */
 body, h1, h2, h3, h4, p, u1 {
     margin: 0;
     padding: 0;
 }
-/* Resets some default styles for consistency */
 
+/*Body Styles */
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
@@ -11,6 +12,27 @@ body {
     color: #333; 
 }
 
+/* Typography */
+h1, h2, h3, h4 {
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+a {
+    color: #103EB2;
+    text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+    outline: 2px dotted;
+}
+
+/* Header Styles */
 header {
     font-family: 'Merriweather' serif;
     padding: 2.4rem 0;
@@ -21,6 +43,7 @@ header.shadowed-header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Navigation Styles */
 nav ul {
     list-style: none;
     padding: 0.5rem 0;
@@ -36,7 +59,7 @@ nav ul li {
 
 nav ul li a {
     color: #333;
-    font-weight: medium;
+    font-weight: 500;
     font-size: 1rem;
     text-decoration: none;
 }
@@ -57,6 +80,7 @@ nav ul li a.active {
     text-decoration: underline;
 }
 
+/* Main Content Styles */
 main {
     max-width: 800px;
     margin: 20px auto;
@@ -71,9 +95,10 @@ section {
     margin-bottom: 2rem;
 }
 
+/* Footer Styles */
 footer {
     text-align: center;
-    font-weight: medium;
+    font-weight: 500;
     color: #333;
     width: 100%;
     box-sizing: border-box;
@@ -102,25 +127,98 @@ footer a:focus {
     outline: 2px dotted;
 }
 footer a.active {
-    font-weight: bold;
-    text-decoration: none;
-}
-
-h1, h2, h3, h4 {
-    margin-bottom: 1rem;
-}
-
-p {
-    margin-bottom: 1rem;
-    line-height: 1.6;
-}
-
-a {
-    color: #103EB2;
     text-decoration: underline;
 }
 
-a:hover,
-a:focus {
+/* index Styling */
+#index h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+/* about Stylng */
+#about h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+#contact-form {
+    background: fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto 2rem auto;
+    text-align: center;
+
+}
+
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-form div {
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+#contact-form label {
+    display: block;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    border: 1 px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#contact-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form button:hover,
+#contact-form button:focus {
+    background-color: #1559A8;
     outline: 2px dotted;
+    box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.3);
+}
+
+#contact-form h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+
+/* résumé Styling */
+#resume h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+/* experience Stylng */
+#experience h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+/* projects Styling */
+#projects h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+/* accessibility-statement Stylng */
+#accessibility-statement h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
 }
