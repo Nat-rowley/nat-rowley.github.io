@@ -88,7 +88,7 @@ h1, h2 {
 
         <section id="contact-form">
             <h3> Get in Touch! </h3>
-            <form action="https://api.staticforms.xyz/submit" method="post" novalidate>
+            <form id="contactForm" action="https://api.staticforms.xyz/submit" method="post" novalidate>
                 <input type="hidden" name="accessKey" value="0fb93c09-b2aa-4783-8157-6c544dd93e1c">
 
             <div>
@@ -119,11 +119,10 @@ h1, h2 {
                 <span id="message-error" class="error-message" aria-live="polite"></span>
             </div>
 
-                <input type="hidden" name="replyTo" value="@">
-                <input type="hidden" name="redirectTo" value="https://nat-rowley.
-                github.io/contact/success">
+            <input type="hidden" name="replyTo" value="@">
+            <input type="hidden" name="redirectTo" value="https://nat-rowley.github.io/contact/success">
 
-                <button type="submit"> Send </button>
+            <button type="submit"> Send </button>
 
             </form>
         </section>
