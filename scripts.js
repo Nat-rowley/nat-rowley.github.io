@@ -7,7 +7,7 @@ let isValid = true;
 inputs.forEach(function(input) {
     const errorElement = document.getElementById(input.getAttribute('aria-describedby'));
 
-    if (input.ariaValueMax.trim() === '') {
+    if (input.value.trim() === '') {
         input.setAttribute('aria-invalid', 'true');
         errorElement.textContent = input.previousElementSibling.textContent.trim() + ' is required';
         isValid = false;
