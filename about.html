@@ -72,37 +72,51 @@ h1, h2 {
 
         <section id="about">
             <h2> About </h2>
-            <p> I started my path...You can contact me via 
-                <a href="mailto:nathaniel.rowley@outlook.com">email </a>, mobile
-                : 0(+44) 7915 965 899, <a href="https://linkedin.com/in/
+            <h3> Training to be a Web Accessibility Specialist</h3>
+            <p> I'm passionate about conducting accessibility audits, heuristic evaluations, and implementing 
+                best practices to enhance usability and digital inclusivity while being committed to continuous learning and staying current with 
+                accessibility standards.
+            </p>
+
+            <p>
+                You can contact me via 
+                <a href="mailto:nathaniel.rowley@outlook.com">email </a>, <a href="https://linkedin.com/in/
                 nat-rowley-92659930b/">LinkedIn </a>, or by using the contact 
-                form below! </p>
+                form below! 
+            </p>
         </section>
 
         <section id="contact-form">
             <h3> Get in Touch! </h3>
-            <form action="https://api.staticforms.xyz/submit" method="post">
+            <form action="https://api.staticforms.xyz/submit" method="post" novalidate>
                 <input type="hidden" name="accessKey" value="0fb93c09-b2aa-4783-8157-6c544dd93e1c">
 
             <div>
-                <label for="name"> Name: </label>
-                <input type="text" id="name" name="name" aria-required="true">
+                <label for="name"> Name: <span aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" aria-required="true" aria-invalid="true" 
+                aria-describedby="name-error">
+                <span id="name-error" class="error-message" aria-live="polite"></span>
+
             </div>
 
             <div>
-                <label for="subject"> Subject: </label>
-                <input type="text" id="subject" name="subject" aria-required="true">
+                <label for="subject"> Subject: <span aria-hidden="true">*</span></label>
+                <input type="text" id="subject" name="subject" aria-required="true" aria-invalid="true">
+                <span id="subject-error" class="error-message" aria-live="polite"></span>
             </div>
 
             <div>
-                <label for="email"> Email: </label>
-                <input type="text" id="email" name="email" aria-required="true">
+                <label for="email"> Email: <span aria-hidden="true">*</span></label>
+                <input type="text" id="email" name="email" aria-required="true" aria-invalid="true">
+                <span id="email-error" class="error-message" aria-live="polite"></span>
+
             </div>
 
             <div>
-                <label for="message"> Message: </label>
+                <label for="message"> Message: <span aria-hidden="true">*</span></label>
                 <textarea id="message" name="message" rows="4" 
-                aria-required="true"></textarea>
+                aria-required="true" aria-invalid="true"></textarea>
+                <span id="message-error" class="error-message" aria-live="polite"></span>
             </div>
 
                 <input type="hidden" name="replyTo" value="@">
@@ -125,6 +139,8 @@ h1, h2 {
         </div>
         </footer>
     </div>
+
+    <script src="scripts.js"></script>
     </body>
 
 </html>

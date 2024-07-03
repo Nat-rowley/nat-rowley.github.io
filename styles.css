@@ -15,6 +15,7 @@ body {
     min-height: 100vh;
 }
 
+/* Wrapper to take full height and manage layout */
 .wrapper {
     display: flex; 
     flex-direction: column;
@@ -143,19 +144,50 @@ footer a.active {
 
 /* index Styling */
 #index h2 {
-    font-size: 2.5rem;
+    font-size: 3.4rem;
     font-weight: 500;
+}
+
+#index p {
+    font-size: 1.2rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #1559A8;
+    border: none;
+    border-radius: 24px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #103EB2;
+    outline: 2px dotted;
+    box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.3);
 }
 
 /* about Stylng */
 #about h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-weight: 500;
+    padding-top: 16px;
+}
+
+#about h3 {
     font-weight: 500;
 }
 
 #contact-form {
     background: fff;
-    padding: 20px;
+    padding: 32px;
     border-radius: 10px;
     max-width: 400px;
     margin: 0 auto 2rem auto;
@@ -177,24 +209,52 @@ footer a.active {
 
 #contact-form label {
     display: block;
+    text-align: left;
+    padding-left: 8px;
+}
+
+#contact-form label span[aria-hidden="true"] {
+    color: red;
+}
+
+.input[aria_invalid="true"]{
+    border-color: red;
+}
+
+.error-message {
+    color:red;
+    font-size: 0.875rem;
+    display: none;
+}
+
+.input[aria-invalid="true"] + .error-message {
+    display: block;
 }
 
 #contact-form input,
 #contact-form textarea {
     padding: 10px;
-    border: 1 px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px;
     width: 100%;
     box-sizing: border-box;
+    border: 1.4px solid #000;
+    outline: none;
 }
 
 #contact-form button {
-    padding: 10px 20px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 500;
     background-color: #333;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 24px;
     cursor: pointer;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border: 2px solid #1559A8;
 }
 
 #contact-form button:hover,
@@ -207,29 +267,28 @@ footer a.active {
 #contact-form h3 {
     font-size: 1.5rem;
     font-weight: 500;
-
 }
 
 /* résumé Styling */
 #resume h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 500;
 }
 
 /* experience Stylng */
 #experience h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 500;
 }
 
 /* projects Styling */
 #projects h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 500;
 }
 
 /* accessibility-statement Stylng */
 #accessibility-statement h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 500;
 }
