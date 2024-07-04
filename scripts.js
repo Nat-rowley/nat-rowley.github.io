@@ -6,14 +6,12 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
     inputs.forEach(function(input) {
         const errorElement = document.getElementById(input.getAttribute('aria-describedby'));
-
-        console.log('Checking input:', input.id);
+        const labelText = input.previousElementSibling.querySelector('.label-text').textContent.trim();
 
         if (input.value.trim() === '') {
             input.setAttribute('aria-invalid', 'true');
-            errorElement.textContent = input.previousElementSibling.textContent.trim() + ' is required';
+            errorElement.textContent = labelText + ' is required';
             isValid = false;
-            console.log('Invalid input:', input.id);
         } else {
             input.removeAttribute('aria-invalid');
             errorElement.textContent = '';
@@ -21,9 +19,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     });
 
     if (isValid) {
-        console.log('Form is valid, submitting...');
         this.submit();
     } else {
-        console.log('Form is invalid, not submitting...');
     }
 });

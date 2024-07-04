@@ -185,6 +185,11 @@ footer a.active {
     font-weight: 500;
 }
 
+#contact-form h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
 #contact-form {
     background: fff;
     padding: 32px;
@@ -200,10 +205,33 @@ footer a.active {
     align-items: center;
 }
 
-#contact-form div {
-    margin-bottom: 1rem;
+.input-container {
+    position: relative;
     width: 100%;
     max-width: 400px;
+    margin-bottom: 1rem;
+}
+
+.input-container input,
+.input-container textarea {
+    width: 100%;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1.4px solid #000;
+    outline: none;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border: 2px solid #1559A8;
 }
 
 #contact-form label {
@@ -216,32 +244,37 @@ footer a.active {
     color: red;
 }
 
-input[aria-invalid="true"],
-textarea[aria-invalid="true"] {
-    border-color: red;
-}
-
-.error-message {
-    color:red;
-    font-size: 0.875rem;
+.input-container .error-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: red;
     display: none;
 }
 
-input[aria-invalid="true"] + .error-message,
-textarea[aria-invalid="true"] + .error-message {
+.input-container input[aria-invalid="true"] ~ .error-icon,
+.input-container textarea[aria-invalid="true"] ~ .error-icon {
     display: block;
+}
+
+.input-container input[aria-invalid="true"] ~ .error-message,
+.input-container textarea[aria-invalid="true"] ~ .error-message {
+    display: block;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    display: none;
+    margin-top: 5px;
     text-align: left;
     padding-left: 8px;
 }
 
-#contact-form input,
-#contact-form textarea {
-    padding: 10px;
-    border-radius: 8px;
-    width: 100%;
-    box-sizing: border-box;
-    border: 1.4px solid #000;
-    outline: none;
+input[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+    border: 2px solid red !important;
 }
 
 #contact-form button {
@@ -255,21 +288,11 @@ textarea[aria-invalid="true"] + .error-message {
     cursor: pointer;
 }
 
-#contact-form input:focus,
-#contact-form textarea:focus {
-    border: 2px solid #1559A8;
-}
-
 #contact-form button:hover,
 #contact-form button:focus {
     background-color: #1559A8;
     outline: 2px dotted;
     box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.3);
-}
-
-#contact-form h3 {
-    font-size: 1.5rem;
-    font-weight: 500;
 }
 
 /* résumé Styling */
