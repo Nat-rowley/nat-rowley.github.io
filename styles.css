@@ -299,22 +299,30 @@ textarea[aria-invalid="true"] {
 #resume h2 {
     font-size: 3rem;
     font-weight: 500;
+    padding-top: 16px;
+}
+
+#resume h3 {
+    font-weight: 500;
 }
 
 /* experience Stylng */
 #experience h2 {
     font-size: 3rem;
     font-weight: 500;
+    padding-top: 16px;
 }
 
 /* projects Styling */
 #projects h2 {
     font-size: 3rem;
     font-weight: 500;
+    padding-top: 16px;
 }
 
 /* accessibility-statement Stylng */
 #accessibility-statement h2 {
     font-size: 3rem;
     font-weight: 500;
+    padding-top: 16px;
 }
