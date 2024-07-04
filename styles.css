@@ -216,7 +216,8 @@ footer a.active {
     color: red;
 }
 
-.input[aria_invalid="true"]{
+input[aria-invalid="true"],
+textarea[aria-invalid="true"] {
     border-color: red;
 }
 
@@ -226,8 +227,11 @@ footer a.active {
     display: none;
 }
 
-.input[aria-invalid="true"] + .error-message {
+input[aria-invalid="true"] + .error-message,
+textarea[aria-invalid="true"] + .error-message {
     display: block;
+    text-align: left;
+    padding-left: 8px;
 }
 
 #contact-form input,
