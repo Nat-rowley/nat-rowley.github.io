@@ -12,7 +12,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         if (input.value.trim() === '') {
             input.setAttribute('aria-invalid', 'true');
             errorElement.textContent = labelText + ' is required';
-            errorMessages.push(labelText + ' is required');
+            errorMessages.push(labelText);
             isValid = false;
         } else {
             input.removeAttribute('aria-invalid');
@@ -26,12 +26,23 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     if (isValid) {
         formSummary.classList.remove('error-summary');
         formSummary.classList.add('success-summary');
-        formSummary.innerHTML = '<i class="ph-fill ph-check-circle"></i> Contact Form Successful! Thanks for contacting me.';
+        formSummary.innerHTML = '<i class="ph-fill ph-check-circle"></i> <strong>Contact Form Successful.</strong> Thanks for contacting me.';
 
         this.submit();
     } else {
         formSummary.classList.remove('success-summary');
         formSummary.classList.add('error-summary');
-        formSummary.innerHTML = '<i class="ph-fill ph-warning"></i> Contact Form Failed. ' + errorMessages.join(' ');
+
+        let errorMessage = '<strong>Contact Form Failed.</strong> ';
+        if (errorMessages.length > 1) {
+            const lastError = errorMessages.pop();
+            errorMessage += `${errorMessages.join(', ')} and ${lastError} are required.`;
+        } else {
+            errorMessage += `${errorMessages[0]} is required.`;
+        }
+
+        
+
+        formSummary.innerHTML = `<i class="ph-fill ph-warning"></i> ${errorMessage}`;
     }
 });
