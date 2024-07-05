@@ -26,7 +26,8 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     if (isValid) {
         formSummary.classList.remove('error-summary');
         formSummary.classList.add('success-summary');
-        formSummary.innerHTML = '<i class="ph-fill ph-check-circle"></i> Contact Form Success. Thanks for contacting me ';
+        formSummary.innerHTML = '<i class="ph-fill ph-check-circle"></i> Contact Form Successful! Thanks for contacting me.';
+
         this.submit();
     } else {
         formSummary.classList.remove('success-summary');

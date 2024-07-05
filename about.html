@@ -93,7 +93,9 @@ h1, h2 {
             <h3> Get in Touch! </h3>
             <p> Use this form to send me an email</p>
             <form id="contactForm" action="https://api.staticforms.xyz/submit" method="post" novalidate>
-                <input type="hidden" name="accessKey" value="0fb93c09-b2aa-4783-8157-6c544dd93e1c">
+            <input type="hidden" name="accessKey" value="0fb93c09-b2aa-4783-8157-6c544dd93e1c">
+            <input type="hidden" name="replyTo" value="@">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/about.html?success=true">
 
             <div id="form-summary" aria-live="polite" class="form-summary"></div>
 
@@ -125,9 +127,6 @@ h1, h2 {
                 <span id="message-error" class="error-message"></span>
             </div>
 
-            <input type="hidden" name="replyTo" value="@">
-            <input type="hidden" name="redirectTo" value="">
-
             <button type="submit"> Send </button>
 
             </form>
@@ -146,6 +145,19 @@ h1, h2 {
     </div>
 
     <script src="scripts.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const formSummary = document.getElementById('form-summary');
+            if (urlParams.has('success')) {
+                formSummary.classList.remove('error-summary');
+                formSummary.classList.add('success-summary');
+                formSummary.innerHTML = '<i class="ph-fill ph-check-circle"></i> Contact Form Successful. Thanks for contacting me. '
+            }
+        })
+    </script>
+
     </body>
 
 </html>
