@@ -190,6 +190,32 @@ footer a.active {
     font-weight: 500;
 }
 
+.form-summary{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: none;
+}
+
+.form-summary i {
+    margin-right: 0.5rem;
+}
+
+.error-summary {
+    display: block;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.success-summary {
+    display: block;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
 #contact-form {
     background: fff;
     padding: 32px;

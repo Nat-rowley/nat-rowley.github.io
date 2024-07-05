@@ -95,36 +95,38 @@ h1, h2 {
             <form id="contactForm" action="https://api.staticforms.xyz/submit" method="post" novalidate>
                 <input type="hidden" name="accessKey" value="0fb93c09-b2aa-4783-8157-6c544dd93e1c">
 
+            <div id="form-summary" aria-live="polite" class="form-summary"></div>
+
             <div class="input-container">
                 <label for="name"> <span class= "label-text"> Name </span> <span aria-hidden="true">*</span></label>
                 <input type="text" id="name" name="name" aria-required="true" aria-describedby="name-error">
                 <span class="error-icon" aria-hidden="true"><i class="ph-fill ph-warning"></i></span>
-                <span id="name-error" class="error-message" aria-live="polite"></span>
+                <span id="name-error" class="error-message"></span>
             </div>
 
             <div class="input-container">
                 <label for="subject"> <span class= "label-text"> Subject </span> <span aria-hidden="true">*</span></label>
                 <input type="text" id="subject" name="subject" aria-required="true" aria-describedby="subject-error">
                 <span class="error-icon" aria-hidden="true"><i class="ph-fill ph-warning"></i></span>
-                <span id="subject-error" class="error-message" aria-live="polite"></span>
+                <span id="subject-error" class="error-message"></span>
             </div>
 
             <div class="input-container">
                 <label for="email"> <span class= "label-text"> Email </span> <span aria-hidden="true">*</span></label>
                 <input type="text" id="email" name="email" aria-required="true" aria-describedby="email-error">
                 <span class="error-icon" aria-hidden="true"><i class="ph-fill ph-warning"></i></span>
-                <span id="email-error" class="error-message" aria-live="polite"></span>
+                <span id="email-error" class="error-message"></span>
             </div>
 
             <div class="input-container">
                 <label for="message"> <span class= "label-text"> Message </span> <span aria-hidden="true">*</span></label>
                 <textarea id="message" name="message" rows="4" aria-required="true" aria-describedby="message-error"></textarea>
                 <span class="error-icon" aria-hidden="true"><i class="ph-fill ph-warning"></i></span>
-                <span id="message-error" class="error-message" aria-live="polite"></span>
+                <span id="message-error" class="error-message"></span>
             </div>
 
             <input type="hidden" name="replyTo" value="@">
-            <input type="hidden" name="redirectTo" value="https://nat-rowley.github.io/contact/success">
+            <input type="hidden" name="redirectTo" value="">
 
             <button type="submit"> Send </button>
 
