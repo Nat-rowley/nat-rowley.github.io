@@ -22,6 +22,15 @@ body {
     flex: 1;
 }
 
+/* Three Dots Separator */
+.section-with-dots::after {
+    content: '. . .'; /* Unicode character for three dots */
+    display: block;
+    text-align: center;
+    font-size: 2rem; /* Adjust the size as needed */
+    color: #333; /* Adjust the color as needed */
+    margin: 20px 0; /* Adjust the spacing as needed */
+}
 
 /* Typography */
 h1, h2, h3, h4 {
@@ -36,6 +45,24 @@ p {
 a {
     color: #103EB2;
     text-decoration: underline;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    padding-top: 16px;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+h4 {
+    font-weight: 500;
+}
+
+p {
+    font-weight: 400;
 }
 
 a:hover,
@@ -116,6 +143,7 @@ footer {
     box-sizing: border-box;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
     padding: 4rem;
+    margin-top: 32px;
 }
 
 .footer-content{
@@ -209,6 +237,8 @@ button.button {
     font-weight: 500;
 }
 
+
+/* Contact Form Styling */
 #contact-form h3 {
     font-size: 1.5rem;
     font-weight: 500;
@@ -283,7 +313,7 @@ button.button {
 
 #contact-form input:focus,
 #contact-form textarea:focus {
-    border: 2px solid #1559A8;
+    border: 2px solid #0A74DA;
 }
 
 #contact-form label {
@@ -335,36 +365,4 @@ textarea[aria-invalid="true"] {
 .form-summary i {
     font-size: 1.4rem;
     vertical-align: middle;
-}
-
-/* résumé Styling */
-#resume h2 {
-    font-size: 3rem;
-    font-weight: 500;
-    padding-top: 16px;
-}
-
-#resume h3 {
-    font-weight: 500;
-}
-
-/* experience Stylng */
-#experience h2 {
-    font-size: 3rem;
-    font-weight: 500;
-    padding-top: 16px;
-}
-
-/* projects Styling */
-#projects h2 {
-    font-size: 3rem;
-    font-weight: 500;
-    padding-top: 16px;
-}
-
-/* accessibility-statement Stylng */
-#accessibility-statement h2 {
-    font-size: 3rem;
-    font-weight: 500;
-    padding-top: 16px;
 }
