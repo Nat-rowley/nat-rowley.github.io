@@ -20,6 +20,20 @@ body {
     display: flex; 
     flex-direction: column;
     flex: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Header Line Style */
+.header-line, .footer-line {
+    width: 800px;
+    margin: 0 auto;
+    height: 2.2px; /* Line height */
+    background-color: #b2d8d862; /* Slightly darker than #E0F2F1 */
+}
+
+.footer-line {
+    margin-top: 40px;
 }
 
 /* Three Dots Separator */
@@ -29,7 +43,11 @@ body {
     text-align: center;
     font-size: 2rem; /* Adjust the size as needed */
     color: #333; /* Adjust the color as needed */
-    margin: 20px 0; /* Adjust the spacing as needed */
+    margin: 40px 0; /* Adjust the spacing as needed */
+}
+
+#about.section-with-dots::after {
+    margin-bottom: -20px;
 }
 
 /* Typography */
@@ -77,10 +95,6 @@ header {
     text-align: center;
 }
 
-header.shadowed-header {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
 /* Navigation Styles */
 nav ul {
     list-style: none;
@@ -121,13 +135,12 @@ nav ul li a.active {
 /* Main Content Styles */
 main {
     flex: 1;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 20px;
+    padding-top: 16px;
 }
 
 section {
     margin-bottom: 2rem;
+    text-align: left;
 }
 
 section {
@@ -141,9 +154,7 @@ footer {
     color: #333;
     width: 100%;
     box-sizing: border-box;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
     padding: 4rem;
-    margin-top: 32px;
 }
 
 .footer-content{
@@ -243,6 +254,7 @@ button.button {
     font-size: 1.5rem;
     font-weight: 500;
 }
+
 
 .form-summary{
     margin-bottom: 1rem;
