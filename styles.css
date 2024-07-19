@@ -379,3 +379,69 @@ textarea[aria-invalid="true"] {
     font-size: 1.4rem;
     vertical-align: middle;
 }
+
+#gunstruction-work {
+    margin-bottom: 2rem; /* Adds space below the section */
+    position: relative;
+}
+
+#gunstruction-work img {
+    width: 100%;
+    max-width: 100vw; /* Allows the image to take the full viewport width */
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#gunstruction-work figure {
+    margin: 0; /* Removes default margins from the figure */
+    text-align: center; /* Centers the figure within its container */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw; /* Ensures the figure takes the full viewport width */
+}
+
+#gunstruction-work figcaption {
+    text-align: center; /* Centers the caption */
+    margin-top: 8px; /* Adds a bit of space above the caption */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto; /* Adjusts the width to auto */
+}
+
+#ux-project, #eval-project, #gameweb-project {
+    margin-bottom: 2rem; /* Adds space below the section */
+    position: relative;
+}
+
+#ux-project img, #eval-project img, #gameweb-project img {
+    width: 100%;
+    max-width: 100vw; /* Allows the image to take the full viewport width */
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#ux-project figure, #eval-project figure, #gameweb-project figure {
+    margin: 0; /* Removes default margins from the figure */
+    text-align: center; /* Centers the figure within its container */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw; /* Ensures the figure takes the full viewport width */
+}
+
+#ux-project figcaption, #eval-project figcaption, #gameweb-project figcaption {
+    text-align: center; /* Centers the caption */
+    margin-top: 8px; /* Adds a bit of space above the caption */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto; /* Adjusts the width to auto */
+}
