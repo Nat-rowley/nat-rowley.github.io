@@ -20,13 +20,13 @@ body {
     display: flex; 
     flex-direction: column;
     flex: 1;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 /* Header Line Style */
 .header-line, .footer-line {
-    width: 800px;
+    width: 1000px;
     margin: 0 auto;
     height: 2.2px;
     background-color: #b2d8d862;
