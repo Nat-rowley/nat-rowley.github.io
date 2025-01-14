@@ -15,6 +15,13 @@ body {
     min-height: 100vh;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
 /* Wrapper to take full height and manage layout */
 .wrapper {
     display: flex; 
@@ -22,6 +29,10 @@ body {
     flex: 1;
     max-width: 1000px;
     margin: 0 auto;
+    padding: 40px;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
 }
 
 /* Header Line Style */
@@ -43,25 +54,32 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 /* Index Text Content Styling */
 #index .text-content {
-    max-width: 600px;
+    max-width: 550px;
 }
 
 /* Index Image Styling */
 #index img {
     max-width: 300px;
-    height: auto;
+    border-radius: 0;
     object-fit: cover;
+    flex-shrink: 0;
 }
 
-
-
-
-
-
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    #index {
+        flex-direction: column;
+        text-align: center;
+    }
+    #index img {
+        margin-top: 20px;
+    }
+}
 
 /* Three Dots Separator */
 .section-with-dots::after {
@@ -174,6 +192,13 @@ section {
 section {
     margin-bottom: 2rem;
 }
+
+/* White Background for Specific Pages */
+#about, #resume, #experience, #projects, #accessibility-statement {
+    background-color: #FFFFFF;
+    
+}
+
 
 /* Footer Styles */
 footer {
