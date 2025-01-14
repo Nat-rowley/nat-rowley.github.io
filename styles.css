@@ -36,6 +36,33 @@ body {
     margin-top: 40px;
 }
 
+/* Index Section Layout */
+#index {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Index Text Content Styling */
+#index .text-content {
+    max-width: 600px;
+}
+
+/* Index Image Styling */
+#index img {
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
 /* Three Dots Separator */
 .section-with-dots::after {
     content: '. . .';
